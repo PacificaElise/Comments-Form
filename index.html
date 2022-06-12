@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чат</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="comments"></div>
+      <label for="name">Введите своё имя <span id="authorError"></span></label>
+      <input type="text" id="author" placeholder="Имя*" />
+      <div id="errorMessage"></div>
+      <div id="divImg">
+        <img src="" alt="photo" id="photo" />
+      </div>
+      <label for="avatars"> Выберите аватар </label>
+      <select id="avatars">
+        <option value="">Выберите из списка</option>
+        <option
+          value="https://catherineasquithgallery.com/uploads/posts/2021-03/1614563270_22-p-kartinka-cheloveka-na-belom-fone-25.png"
+        >
+          Победитель
+        </option>
+        <option
+          value="https://postila.ru/data/ee/ea/70/be/eeea70becd7f28cc433a09b78eeb68934ac7ce862e652090bcb6d921ddfab4fb.jpg"
+        >
+          Умник
+        </option>
+        <option
+          value="https://free-png.ru/wp-content/uploads/2022/01/free-png.ru-600.png"
+        >
+          Супергерой
+        </option>
+        <option
+          value="https://w7.pngwing.com/pngs/752/755/png-transparent-3d-computer-graphics-character-presentation-animation-loupe-3d-computer-graphics-hand-photography.png"
+        >
+          Деловой
+        </option>
+        <option
+          value="https://catherineasquithgallery.com/uploads/posts/2021-03/1614558326_10-p-chelovechki-na-belom-fone-11.jpg"
+        >
+          Исследователь
+        </option>
+        <option
+          value="https://catherineasquithgallery.com/uploads/posts/2021-03/1614563260_77-p-kartinka-cheloveka-na-belom-fone-84.png"
+        >
+          Певец
+        </option>
+      </select>
+      <button id="clear">Очистить сохраненные данные</button>
+      <span class="required">*Поле обязательно для заполнения</span>
+      <label for="comment">Оставьте ваш комментарий</label>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      <div class="buttons">
+        <button type="submit" class="btn1">Отправить</button>
+        <button type="reset" class="btn2">Очистить написанное</button>
+        <button type="reset" class="btn3">Очистить переписку</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
